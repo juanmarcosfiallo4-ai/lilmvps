@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+<head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Lil' MVPs Academy | Where Curiosity Turns into Confidence</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700;800&amp;family=Be+Vietnam+Pro:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+          tailwind.config = {
+            darkMode: "class",
+            theme: {
+              extend: {
+                "colors": {
+                        "on-primary-fixed-variant": "#482c73",
+                        "surface-container-lowest": "#ffffff",
+                        "background": "#fff4f0",
+                        "surface-container": "#ffe3d4",
+                        "on-secondary": "#ffeff2",
+                        "secondary-container": "#ffc1d6",
+                        "tertiary-container": "#f9d461",
+                        "on-error-container": "#510017",
+                        "on-primary-container": "#3f2369",
+                        "surface-container-high": "#ffdbc9",
+                        "primary-fixed-dim": "#b697e6",
+                        "primary-container": "#c4a5f5",
+                        "on-primary-fixed": "#260450",
+                        "surface-dim": "#ffc9ac",
+                        "primary-fixed": "#c4a5f5",
+                        "on-surface": "#452715",
+                        "inverse-primary": "#c4a5f5",
+                        "on-secondary-fixed": "#562239",
+                        "tertiary-fixed": "#f9d461",
+                        "on-tertiary": "#fff2d4",
+                        "primary-dim": "#5d4189",
+                        "surface-container-highest": "#ffd4be",
+                        "surface-container-low": "#ffede5",
+                        "surface": "#fff4f0",
+                        "secondary-dim": "#773d55",
+                        "on-tertiary-fixed": "#463600",
+                        "error": "#b41340",
+                        "error-container": "#f74b6d",
+                        "on-background": "#452715",
+                        "secondary-fixed-dim": "#faaec9",
+                        "on-secondary-container": "#6d354c",
+                        "inverse-surface": "#1e0800",
+                        "surface-tint": "#694d96",
+                        "tertiary": "#705900",
+                        "outline-variant": "#d2a389",
+                        "on-tertiary-container": "#5c4900",
+                        "on-surface-variant": "#79533d",
+                        "surface-bright": "#fff4f0",
+                        "tertiary-dim": "#624d00",
+                        "on-error": "#ffefef",
+                        "secondary-fixed": "#ffc1d6",
+                        "inverse-on-surface": "#c1937a",
+                        "outline": "#976e57",
+                        "primary": "#694d96",
+                        "on-primary": "#f9efff",
+                        "surface-variant": "#ffd4be",
+                        "on-tertiary-fixed-variant": "#675200",
+                        "on-secondary-fixed-variant": "#783e56",
+                        "secondary": "#854961",
+                        "error-dim": "#a70138",
+                        "tertiary-fixed-dim": "#eac655"
+                },
+                "borderRadius": {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                },
+                "fontFamily": {
+                        "headline": ["Plus Jakarta Sans"],
+                        "body": ["Be Vietnam Pro"],
+                        "label": ["Plus Jakarta Sans"]
+                }
+              },
+            },
+          }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .story-cloud-shape {
+            border-radius: 60% 40% 70% 30% / 40% 50% 60% 70%;
+        }
+        .story-cloud-alt {
+            border-radius: 30% 70% 40% 60% / 60% 40% 70% 30%;
+        }
+        .story-cloud-mini {
+            border-radius: 50% 50% 60% 40% / 40% 60% 50% 50%;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body antialiased">
+<!-- Top Navigation Bar -->
+<nav class="w-full top-0 sticky z-50 bg-[#fff4f0]/90 backdrop-blur-md dark:bg-stone-950/90 flex justify-between items-center px-6 md:px-12 py-6 max-w-screen-2xl mx-auto">
+<div class="text-2xl font-black text-[#452715] dark:text-[#fff4f0] font-headline tracking-tight">Lil' MVPs Academy</div>
+<div class="hidden lg:flex items-center gap-8 font-headline font-bold text-sm uppercase tracking-wide">
+<a class="text-[#694d96] hover:opacity-80 transition-opacity" href="#about">About</a>
+<a class="text-[#452715] dark:text-[#ffd4be] opacity-80 hover:opacity-100 transition-opacity" href="#programs">Programs</a>
+<a class="text-[#452715] dark:text-[#ffd4be] opacity-80 hover:opacity-100 transition-opacity" href="#safety">Safety & Care</a>
+<a class="text-[#452715] dark:text-[#ffd4be] opacity-80 hover:opacity-100 transition-opacity" href="#contact">Contact</a>
+</div>
+<a href="#enrollment" class="bg-primary text-on-primary px-6 md:px-8 py-3 rounded-full font-headline font-bold hover:scale-105 transition-transform shadow-lg shadow-primary/20">
+	Enroll Now
+</a>
+</nav>
+<!-- Hero Section -->
+<header class="relative overflow-hidden px-6 md:px-12 pt-12 md:pt-20 pb-32 max-w-screen-2xl mx-auto flex flex-col lg:flex-row items-center gap-16">
+<div class="flex-1 space-y-8 z-10 text-center lg:text-left">
+<h1 class="text-5xl md:text-7xl font-headline font-extrabold text-on-surface leading-[1.1] tracking-tight">
+    Where <span class="text-primary italic">Curiosity</span> Turns Into <span class="text-tertiary">Confidence</span>
+</h1>
+<p class="text-xl text-on-surface-variant max-w-xl mx-auto lg:mx-0 leading-relaxed">
+    A nurturing childcare and mentorship academy designed to help children grow, learn, and lead from infancy through school age.
+</p>
+<!-- Quick Value Points -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
+<div class="flex items-center gap-4 bg-white/60 p-4 rounded-2xl shadow-sm border border-white">
+<div class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-xl">verified_user</span>
+</div>
+<span class="font-bold text-sm leading-tight text-left">Safe and structured learning environment</span>
+</div>
+<div class="flex items-center gap-4 bg-white/60 p-4 rounded-2xl shadow-sm border border-white">
+<div class="w-10 h-10 bg-secondary/10 rounded-full flex items-center justify-center text-secondary shrink-0">
+<span class="material-symbols-outlined text-xl">toys_and_games</span>
+</div>
+<span class="font-bold text-sm leading-tight text-left">Play-based and mentorship-driven education</span>
+</div>
+<div class="flex items-center gap-4 bg-white/60 p-4 rounded-2xl shadow-sm border border-white">
+<div class="w-10 h-10 bg-tertiary/10 rounded-full flex items-center justify-center text-tertiary shrink-0">
+<span class="material-symbols-outlined text-xl">schedule</span>
+</div>
+<span class="font-bold text-sm leading-tight text-left">Extended and overnight care available</span>
+</div>
+<div class="flex items-center gap-4 bg-white/60 p-4 rounded-2xl shadow-sm border border-white">
+<div class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-xl">location_city</span>
+</div>
+<span class="font-bold text-sm leading-tight text-left">Serving families in Milwaukee</span>
+</div>
+</div>
+<!-- CTA Buttons -->
+<div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4 w-full">
+<a href="#enrollment" class="w-full sm:w-auto bg-primary text-on-primary px-8 py-4 rounded-full font-headline font-bold text-base hover:scale-105 transition-transform shadow-xl shadow-primary/30 text-center">
+    Enroll Your Child
+</a>
+<a href="#contact" class="w-full sm:w-auto bg-surface-container-highest text-on-primary-container px-8 py-4 rounded-full font-headline font-bold text-base hover:bg-surface-container-high transition-colors text-center">
+    Contact Us
+</a>
+</div>
+</div>
+<div class="flex-1 relative w-full max-w-2xl">
+<div class="story-cloud-shape bg-primary-container w-full aspect-square overflow-hidden relative border-8 border-surface-container-lowest shadow-2xl">
+<img alt="Storybook illustration of a sunlit classroom with happy children" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCIOvxa-KPqnNFzB-m4noGj8Uh1QfYdmyyz-OZA_hmRVbYLMnUYakmN4K4NY-NpFMz4wfV3SFRzLdC-wJHV8yJAcr96DJ8TBxPkuBGFyR8mL_khuICbvEZsDcaCi3MMitHTnePBRFWnlBLS8J50N3essl80RftsyPbDy_ZIAw7gmvi9zI3T6Pa_eiHdMVc4lDaq75UdbdIiuxhAvYWGRPekTNNXJsmYbgKZ6zmU2eaizkwDUVKNdpbIPQ5e1MT7ti_yGAmQiHiPJyRn" />
+</div>
+<!-- Floating Badge -->
+<div class="absolute -bottom-6 -left-6 bg-white p-6 rounded-2xl shadow-2xl flex items-center gap-4 max-w-[220px] animate-bounce">
+<div class="w-12 h-12 rounded-full bg-tertiary-container flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined">emoji_events</span>
+</div>
+<p class="font-headline font-bold text-sm leading-tight text-on-surface">Developing tomorrow's MVPs, today</p>
+</div>
+</div>
+</header>
+<!-- About Lil’ MVPs Academy -->
+<section class="py-24 px-6 md:px-12 bg-white/50" id="about">
+<div class="max-w-screen-2xl mx-auto flex flex-col lg:flex-row items-center gap-16">
+<div class="lg:w-1/2 space-y-6">
+<h2 class="text-4xl md:text-5xl font-headline font-extrabold text-on-surface">Building Tomorrow’s MVPs, Today</h2>
+<p class="text-xl text-on-surface-variant leading-relaxed">
+    Lil’ MVPs Academy is more than a childcare center — it’s a mentorship-driven learning environment focused on whole-child development. We partner with families to create a safe, supportive, and engaging space where children build confidence, curiosity, and life skills.
+</p>
+<p class="text-xl text-on-surface-variant leading-relaxed">
+    Our programs are designed to support academic, social, emotional, and leadership growth from infancy through school age, helping every child develop into a confident and capable learner.
+</p>
+<div class="pt-6">
+    <a href="#contact" class="inline-block bg-secondary text-white px-8 py-4 rounded-full font-headline font-bold hover:scale-105 transition-transform shadow-lg shadow-secondary/20">
+        Schedule a Tour
+    </a>
+</div>
+</div>
+<div class="lg:w-1/2 grid grid-cols-2 gap-4">
+<div class="space-y-4">
+<div class="story-cloud-mini overflow-hidden h-64 shadow-lg">
+<img alt="Storybook illustration of child exploring" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuChmjkREsj9opUKeN4P7IR27Mlx7eMSZ6pYRA4UHCS-s6hn9QaTEdJ8BsPAxyo8a7WtPg2ljOQkMMCwpfcdYtLOvV0DT-kmcD-GD29fRdQbc_-dea9Vn6Tqqr9Q2ZBDPLZ5u5U2bXfCSRVkmagC9mdGJTMXdISGJUqU-ll5J99Adfos9Eh312Z3lTolsKCYMEXESf3A14V9RQQUJLoblYb9ED_71Yh11-qHpnbdKrcDsqhBRIpVHLxdsL0cKgyiZ3vrTRMB-AtBGYDj" />
+</div>
+<div class="story-cloud-alt overflow-hidden h-48 shadow-lg">
+<img alt="Storybook illustration of learning environment" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDlFTbVUo9_VjjDJYG_HLMKeCpJbOS8dnREWvR-4GC8rFNNfiqud6mF9hs3zndjpgjge_sbwOvLV-Dmes9fBg_9BFVS2Ye3IzcCZQyzoPDJUs_h0YXNwVVWlazmE9tWk7dx3wcv04cKdEzNCA1t80WyQ58flIlAw_Dfl9Mt7kfxcolS5jM29RIMLHSskW7OFPSAfuprtghkuWpqIrHM7QTa2nyG7WpazpbWXVX9b1EMpjO9b_k-YjamSARzU9KMG7Ag_YdrTfoo_XiA" />
+</div>
+</div>
+<div class="space-y-4 pt-12">
+<div class="story-cloud-alt overflow-hidden h-48 shadow-lg">
+<img alt="Storybook illustration of creative play" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD5KEOH57LbfQJNkOUaFahF87g2JlHijFzLaACldlyiNasnE03xCEPT4QABWFcsYcqSruJl4NeinDLolQATpfsVd5aBI5SSw3xNVqvwbPMIxkPwIA_trQj25sUuPYNXq4ivxJ4TBhTNnhtDONlOtPBPc2HA8mnD3fxOFh8fOcaaO4X1uybM3IKKkq44I-6di2YW_Ky-NNq7a6OnZSFyLL_xLTlktNOq0BPk62yVzpzT6PySdttNkg1exTUvslYqdseFul8RsDJnKtGA" />
+</div>
+<div class="story-cloud-mini overflow-hidden h-64 shadow-lg">
+<img alt="Storybook illustration of social interaction" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAEXDnmY_9gJy0Y42pn_hm80AAx4N0sdOgs-dAPZFeeKTlJshfS9gSWPxJe9ZdygACxRFpGd8pm24ka256xDmGXNd3s8YOvZe5GYSXxyjsBZJWWNHbrdU7sycFrD5fgH12QqgPi4Mi746oJRVHhPd6vxZUXgDLynEZWvXw07D6AtvRB0R4hhTlBhCxjveg2f15xF5Q5q5HfaBfv79MTqL1v3igAySTSco4a2GCuVroPdv-rLOsL8D2cEaPuklcvzHBhV4K1JqDpDX7Y" />
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Our Mission Section -->
+<section class="bg-surface py-24 px-6 md:px-12">
+<div class="max-w-4xl mx-auto text-center space-y-10">
+<div class="w-20 h-1 bg-primary/20 mx-auto rounded-full"></div>
+<h2 class="text-primary font-headline font-extrabold text-3xl md:text-4xl leading-tight">
+    "A Safe, Supportive Place for Every Child to Grow"
+</h2>
+<p class="text-xl text-on-surface-variant font-medium leading-relaxed">
+    Our mission is to provide a nurturing and inclusive environment where children are supported through every stage of their development while building confidence, independence, and strong character.
+</p>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 pt-8 text-left justify-items-center">
+    <div class="bg-white/60 p-6 rounded-2xl w-full border border-white shadow-sm flex items-start gap-4 hover:shadow-md transition-shadow">
+        <span class="material-symbols-outlined text-primary mt-1">star</span>
+        <span class="font-bold text-on-surface">Leadership and confidence development</span>
+    </div>
+    <div class="bg-white/60 p-6 rounded-2xl w-full border border-white shadow-sm flex items-start gap-4 hover:shadow-md transition-shadow">
+        <span class="material-symbols-outlined text-secondary mt-1">favorite</span>
+        <span class="font-bold text-on-surface">Social and emotional growth</span>
+    </div>
+    <div class="bg-white/60 p-6 rounded-2xl w-full border border-white shadow-sm flex items-start gap-4 hover:shadow-md transition-shadow">
+        <span class="material-symbols-outlined text-tertiary mt-1">palette</span>
+        <span class="font-bold text-on-surface">Hands-on learning and creativity</span>
+    </div>
+    <div class="bg-white/60 p-6 rounded-2xl w-full border border-white shadow-sm flex items-start gap-4 hover:shadow-md transition-shadow">
+        <span class="material-symbols-outlined text-primary mt-1">group_add</span>
+        <span class="font-bold text-on-surface">Strong partnerships with families</span>
+    </div>
+    <div class="bg-white/60 p-6 rounded-2xl w-full border border-white shadow-sm flex items-start gap-4 hover:shadow-md transition-shadow lg:col-span-2 lg:justify-self-center lg:w-1/2">
+        <span class="material-symbols-outlined text-secondary mt-1">rocket_launch</span>
+        <span class="font-bold text-on-surface">Preparing children for real-world success</span>
+    </div>
+</div>
+</div>
+</section>
+<!-- Programs Section -->
+<section class="py-32 px-6 md:px-12 bg-white" id="programs">
+<div class="max-w-screen-2xl mx-auto space-y-20">
+<div class="flex flex-col md:flex-row justify-between items-end gap-8">
+<div class="space-y-4">
+<h3 class="text-secondary font-headline font-bold text-lg tracking-widest uppercase">Educational Pathways</h3>
+<h2 class="text-5xl font-headline font-extrabold text-on-surface">Care Designed for Every Stage of Growth</h2>
+</div>
+<a href="#enrollment" class="bg-primary text-on-primary px-8 py-4 rounded-full font-headline font-bold text-base hover:scale-105 transition-transform shadow-xl shadow-primary/30">
+    Check Availability
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+<!-- Program Card 1 -->
+<div class="group bg-background rounded-3xl overflow-hidden border border-surface-container hover:shadow-2xl transition-all duration-500 flex flex-col">
+<div class="aspect-square overflow-hidden relative m-4 rounded-2xl shrink-0">
+<img alt="Playful illustration of infant & toddler" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBM-B_C9CDP-NbTVsmL6-7ArbSqLOkdAnMYWWuLykwpwslXAzkVw26LSn--L1g2PvNhtaGsfK0lfmSF74YRQwxFDbnrefuiicoNTLMlhpwhrozK-vMly0vUz9yZ8k_pGN-lqck-CVf05rq4oJFbURaxYN4lEdC6KyDB9IFMVzInkco6p1InLSqa_4dP1lvef8VyxPfvXR2s_GUtqD2HuXCYNL1z08-UCEG8rrHOn1-UHlEb3aH0XVwWzJ3sQM3UEhuMY_688z8KWK44" />
+<div class="absolute top-4 right-4 bg-tertiary text-on-tertiary px-3 py-1 rounded-full font-headline font-bold text-xs uppercase tracking-wider">6wks - 3yrs</div>
+</div>
+<div class="p-6 pt-2 space-y-4 flex-1 flex flex-col">
+<h3 class="text-2xl font-headline font-extrabold text-primary">Infant & Toddler</h3>
+<div class="flex-1 space-y-3">
+    <div class="flex items-start gap-3 text-sm font-bold text-on-surface">
+        <span class="material-symbols-outlined text-tertiary text-lg shrink-0">check_circle</span>
+        Sensory exploration & early socialization
+    </div>
+    <div class="flex items-start gap-3 text-sm font-bold text-on-surface">
+        <span class="material-symbols-outlined text-tertiary text-lg shrink-0">check_circle</span>
+        Music, movement, & foundational learning
+    </div>
+    <div class="flex items-start gap-3 text-sm font-bold text-on-surface">
+        <span class="material-symbols-outlined text-tertiary text-lg shrink-0">check_circle</span>
+        Safe and nurturing environment
+    </div>
+</div>
+</div>
+</div>
+<!-- Program Card 2 -->
+<div class="group bg-background rounded-3xl overflow-hidden border border-surface-container hover:shadow-2xl transition-all duration-500 flex flex-col">
+<div class="aspect-square overflow-hidden relative m-4 rounded-2xl shrink-0">
+<img alt="Playful illustration of preschool" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA3u6SEQU1W-rMfDp2dcSKU-Snybv5BewKU1AMMyrNPcQg7fOIy-qavUSrSmyBprs2FQ6zoZG_jDdT1WogqLF-90C25yswf3QkJ6gyogZEOt2m49iC8E1UTSkjwoKbwctrK15oQw-unUJbMyVS92-HO_dmKWKnUNjeN8mQNFqsFuFkG8LFyuQ7DsZU6eNU0q0COgel3SkXxVIXKXC7pH-dkDFAbeWbl3lZ56F8Ni8SvEMiz3sdVZ4t6IjwPSAXLMy40HWznV8T0cEnR" />
+<div class="absolute top-4 right-4 bg-secondary text-on-secondary px-3 py-1 rounded-full font-headline font-bold text-xs uppercase tracking-wider">Ages 3-4</div>
+</div>
+<div class="p-6 pt-2 space-y-4 flex-1 flex flex-col">
+<h3 class="text-2xl font-headline font-extrabold text-primary">Preschool</h3>
+<div class="flex-1 space-y-3">
+    <div class="flex items-start gap-3 text-sm font-bold text-on-surface">
+        <span class="material-symbols-outlined text-secondary text-lg shrink-0">check_circle</span>
+        Language and early literacy development
+    </div>
+    <div class="flex items-start gap-3 text-sm font-bold text-on-surface">
+        <span class="material-symbols-outlined text-secondary text-lg shrink-0">check_circle</span>
+        Hands-on learning and creative play
+    </div>
+    <div class="flex items-start gap-3 text-sm font-bold text-on-surface">
+        <span class="material-symbols-outlined text-secondary text-lg shrink-0">check_circle</span>
+        Social and teamwork skills
+    </div>
+</div>
+</div>
+</div>
+<!-- Program Card 3 -->
+<div class="group bg-background rounded-3xl overflow-hidden border border-surface-container hover:shadow-2xl transition-all duration-500 flex flex-col">
+<div class="aspect-square overflow-hidden relative m-4 rounded-2xl shrink-0">
+<img alt="Playful illustration of pre-k" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBzex_PcLQyzUlev8KDDE1yTsO3KhjCtYQ-GhYdPSDttSdWqAPOT1yH9rOcPQk5C3ILQmNHSQys3wqbEHFz3Juf1dBmtiZa8S8UNRAheJXQjbHK0TbvESt93m3NJ8-fNLEYDm1FTnN0_5wME4s2oFIx6b-dnolmv7DZ3MH9YPX0ptDY8XndnOWbzI78GluuZLZl4yRDw77J-Qzw9jgfnzm-96Oe3--ZKWvTzzTjz7RONCaWk6qIFXZ94jgUGLDkN-2JAn17ksRh9pAO" />
+<div class="absolute top-4 right-4 bg-primary text-on-primary px-3 py-1 rounded-full font-headline font-bold text-xs uppercase tracking-wider">Ages 4-5</div>
+</div>
+<div class="p-6 pt-2 space-y-4 flex-1 flex flex-col">
+<h3 class="text-2xl font-headline font-extrabold text-primary">Pre-K</h3>
+<div class="flex-1 space-y-3">
+    <div class="flex items-start gap-3 text-sm font-bold text-on-surface">
+        <span class="material-symbols-outlined text-primary text-lg shrink-0">check_circle</span>
+        Kindergarten readiness and STEAM learning
+    </div>
+    <div class="flex items-start gap-3 text-sm font-bold text-on-surface">
+        <span class="material-symbols-outlined text-primary text-lg shrink-0">check_circle</span>
+        Problem-solving and leadership development
+    </div>
+    <div class="flex items-start gap-3 text-sm font-bold text-on-surface">
+        <span class="material-symbols-outlined text-primary text-lg shrink-0">check_circle</span>
+        Structured academic preparation
+    </div>
+</div>
+</div>
+</div>
+<!-- Program Card 4 -->
+<div class="group bg-background rounded-3xl overflow-hidden border border-surface-container hover:shadow-2xl transition-all duration-500 flex flex-col">
+<div class="aspect-square overflow-hidden relative m-4 rounded-2xl shrink-0">
+<!-- Reusing About-1 image for School Age placeholder -->
+<img alt="Playful illustration of school age children" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuChmjkREsj9opUKeN4P7IR27Mlx7eMSZ6pYRA4UHCS-s6hn9QaTEdJ8BsPAxyo8a7WtPg2ljOQkMMCwpfcdYtLOvV0DT-kmcD-GD29fRdQbc_-dea9Vn6Tqqr9Q2ZBDPLZ5u5U2bXfCSRVkmagC9mdGJTMXdISGJUqU-ll5J99Adfos9Eh312Z3lTolsKCYMEXESf3A14V9RQQUJLoblYb9ED_71Yh11-qHpnbdKrcDsqhBRIpVHLxdsL0cKgyiZ3vrTRMB-AtBGYDj" />
+<div class="absolute top-4 right-4 bg-tertiary text-on-tertiary px-3 py-1 rounded-full font-headline font-bold text-xs uppercase tracking-wider">Ages 6-12</div>
+</div>
+<div class="p-6 pt-2 space-y-4 flex-1 flex flex-col">
+<h3 class="text-2xl font-headline font-extrabold text-primary">School Age</h3>
+<div class="flex-1 space-y-3">
+    <div class="flex items-start gap-3 text-sm font-bold text-on-surface">
+        <span class="material-symbols-outlined text-tertiary text-lg shrink-0">check_circle</span>
+        Homework support and life skills
+    </div>
+    <div class="flex items-start gap-3 text-sm font-bold text-on-surface">
+        <span class="material-symbols-outlined text-tertiary text-lg shrink-0">check_circle</span>
+        Entrepreneurship and leadership programs
+    </div>
+    <div class="flex items-start gap-3 text-sm font-bold text-on-surface">
+        <span class="material-symbols-outlined text-tertiary text-lg shrink-0">check_circle</span>
+        Mentorship and real-world readiness
+    </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Learning Approach -->
+<section class="py-32 px-6 md:px-12 bg-surface-container-low" id="approach">
+<div class="max-w-screen-2xl mx-auto">
+<div class="text-center mb-16 space-y-4 max-w-3xl mx-auto">
+<h2 class="text-4xl md:text-5xl font-headline font-extrabold text-on-surface">Play-Based. Structured. Mentorship-Driven.</h2>
+<p class="text-on-surface-variant text-lg">
+    At Lil’ MVPs Academy, children learn through hands-on experiences, guided discovery, and structured routines that support whole-child development.
+</p>
+<p class="text-primary font-bold italic pt-2">
+    We believe children learn best when they are engaged, supported, and encouraged to explore.
+</p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
+<!-- Approach Pillar 1 -->
+<div class="p-8 bg-white rounded-3xl space-y-4 hover:translate-y-[-8px] transition-transform shadow-sm text-center">
+<div class="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center text-primary mx-auto"><span class="material-symbols-outlined text-2xl">auto_stories</span></div>
+<h4 class="font-headline font-bold text-lg leading-tight">Montessori-Inspired Learning</h4>
+</div>
+<!-- Approach Pillar 2 -->
+<div class="p-8 bg-white rounded-3xl space-y-4 hover:translate-y-[-8px] transition-transform shadow-sm text-center">
+<div class="w-14 h-14 rounded-2xl bg-secondary/10 flex items-center justify-center text-secondary mx-auto"><span class="material-symbols-outlined text-2xl">extension</span></div>
+<h4 class="font-headline font-bold text-lg leading-tight">Creative Curriculum Framework</h4>
+</div>
+<!-- Approach Pillar 3 -->
+<div class="p-8 bg-white rounded-3xl space-y-4 hover:translate-y-[-8px] transition-transform shadow-sm text-center">
+<div class="w-14 h-14 rounded-2xl bg-tertiary/10 flex items-center justify-center text-tertiary mx-auto"><span class="material-symbols-outlined text-2xl">diversity_3</span></div>
+<h4 class="font-headline font-bold text-lg leading-tight">Reggio Emilia Creativity</h4>
+</div>
+<!-- Approach Pillar 4 -->
+<div class="p-8 bg-white rounded-3xl space-y-4 hover:translate-y-[-8px] transition-transform shadow-sm text-center">
+<div class="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center text-primary mx-auto"><span class="material-symbols-outlined text-2xl">science</span></div>
+<h4 class="font-headline font-bold text-lg leading-tight">STEAM & Outdoor Learning</h4>
+</div>
+<!-- Approach Pillar 5 -->
+<div class="p-8 bg-white rounded-3xl space-y-4 hover:translate-y-[-8px] transition-transform shadow-sm text-center">
+<div class="w-14 h-14 rounded-2xl bg-secondary/10 flex items-center justify-center text-secondary mx-auto"><span class="material-symbols-outlined text-2xl">psychology_alt</span></div>
+<h4 class="font-headline font-bold text-lg leading-tight">Social & Emotional Development</h4>
+</div>
+</div>
+</div>
+</section>
+<!-- Safety & Flexible Options -->
+<section class="py-32 px-6 md:px-12 bg-white" id="safety">
+<div class="max-w-screen-2xl mx-auto flex flex-col lg:flex-row gap-16">
+<div class="flex-1 bg-primary-container p-12 rounded-[3rem] space-y-8">
+<h3 class="text-4xl font-headline font-extrabold text-on-primary-container">Your Child’s Safety Comes First</h3>
+<p class="text-on-primary-container/90 text-lg font-medium">We create a safe and structured environment where every child can thrive.</p>
+<div class="space-y-6">
+<div class="flex gap-4">
+<div class="bg-white/20 w-12 h-12 rounded-full flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary-container">gpp_good</span></div>
+<div class="flex items-center"><h5 class="font-bold text-on-primary-container">Licensed and regulated by Wisconsin DCF</h5></div>
+</div>
+<div class="flex gap-4">
+<div class="bg-white/20 w-12 h-12 rounded-full flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary-container">groups</span></div>
+<div class="flex items-center"><h5 class="font-bold text-on-primary-container">Low student-to-teacher ratios</h5></div>
+</div>
+<div class="flex gap-4">
+<div class="bg-white/20 w-12 h-12 rounded-full flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary-container">clean_hands</span></div>
+<div class="flex items-center"><h5 class="font-bold text-on-primary-container">Daily sanitization and safety protocols</h5></div>
+</div>
+<div class="flex gap-4">
+<div class="bg-white/20 w-12 h-12 rounded-full flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary-container">emergency</span></div>
+<div class="flex items-center"><h5 class="font-bold text-on-primary-container">Emergency preparedness and trained staff</h5></div>
+</div>
+<div class="flex gap-4">
+<div class="bg-white/20 w-12 h-12 rounded-full flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary-container">favorite</span></div>
+<div class="flex items-center"><h5 class="font-bold text-on-primary-container">Positive behavior guidance and support</h5></div>
+</div>
+</div>
+</div>
+<div class="flex-1 py-8 space-y-12">
+<div class="space-y-6">
+<h3 class="text-4xl font-headline font-extrabold text-on-surface">Designed for Busy Families</h3>
+<p class="text-on-surface-variant text-lg leading-relaxed">Our goal is to support families with reliable, high-quality childcare that fits their schedule.</p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+<div class="p-6 border-2 border-surface-container rounded-3xl hover:border-primary transition-colors flex items-center gap-4">
+<span class="material-symbols-outlined text-primary text-3xl">light_mode</span>
+<h4 class="font-bold text-lg">Full-time and part-time care</h4>
+</div>
+<div class="p-6 border-2 border-surface-container rounded-3xl hover:border-secondary transition-colors flex items-center gap-4">
+<span class="material-symbols-outlined text-secondary text-3xl">dark_mode</span>
+<h4 class="font-bold text-lg">Extended evening care</h4>
+</div>
+<div class="p-6 border-2 border-surface-container rounded-3xl hover:border-tertiary transition-colors flex items-center gap-4">
+<span class="material-symbols-outlined text-tertiary text-3xl">bedtime</span>
+<h4 class="font-bold text-lg">Overnight care available</h4>
+</div>
+<div class="p-6 border-2 border-surface-container rounded-3xl hover:border-primary transition-colors flex items-center gap-4">
+<span class="material-symbols-outlined text-primary text-3xl">weekend</span>
+<h4 class="font-bold text-lg">Weekend availability</h4>
+</div>
+<div class="p-6 border-2 border-surface-container rounded-3xl hover:border-secondary transition-colors flex items-center gap-4 sm:col-span-2">
+<span class="material-symbols-outlined text-secondary text-3xl">event_available</span>
+<h4 class="font-bold text-lg">Flexible scheduling options</h4>
+</div>
+</div>
+<button class="bg-surface-container-highest text-on-primary-container px-10 py-5 rounded-full font-headline font-bold text-lg hover:bg-surface-container-high transition-colors shadow-md">
+    Request Pricing
+</button>
+</div>
+</div>
+</section>
+<!-- Parent Partnership -->
+<section class="py-24 px-6 md:px-12 bg-secondary/5">
+<div class="max-w-screen-2xl mx-auto flex flex-col md:flex-row items-center gap-12">
+<div class="md:w-1/3 text-center md:text-left">
+<h3 class="text-4xl font-headline font-extrabold text-secondary">We Work Together to Support Your Child</h3>
+<p class="text-on-surface-variant mt-4 leading-relaxed font-medium">We believe strong partnerships with families lead to stronger outcomes for children.</p>
+</div>
+<div class="md:w-2/3 grid grid-cols-2 lg:grid-cols-3 gap-8">
+<div class="bg-white p-6 rounded-2xl shadow-sm text-center space-y-4">
+<span class="material-symbols-outlined text-secondary text-3xl">mail</span>
+<h5 class="font-bold text-sm">Weekly updates and communication</h5>
+</div>
+<div class="bg-white p-6 rounded-2xl shadow-sm text-center space-y-4">
+<span class="material-symbols-outlined text-secondary text-3xl">supervisor_account</span>
+<h5 class="font-bold text-sm">Parent-teacher conferences</h5>
+</div>
+<div class="bg-white p-6 rounded-2xl shadow-sm text-center space-y-4">
+<span class="material-symbols-outlined text-secondary text-3xl">diversity_1</span>
+<h5 class="font-bold text-sm">Family involvement opportunities</h5>
+</div>
+<div class="bg-white p-6 rounded-2xl shadow-sm text-center space-y-4">
+<span class="material-symbols-outlined text-secondary text-3xl">forum</span>
+<h5 class="font-bold text-sm">Open and transparent communication</h5>
+</div>
+<div class="bg-white p-6 rounded-2xl shadow-sm text-center space-y-4">
+<span class="material-symbols-outlined text-secondary text-3xl">door_open</span>
+<h5 class="font-bold text-sm">Tours and classroom visits available</h5>
+</div>
+</div>
+</div>
+</section>
+<!-- Enrollment Steps -->
+<section class="py-32 px-6 md:px-12 bg-background" id="enrollment">
+<div class="max-w-6xl mx-auto text-center space-y-16">
+<div class="space-y-4">
+<h2 class="text-4xl md:text-5xl font-headline font-extrabold text-on-surface">Start in 4 Easy Steps</h2>
+<p class="text-on-surface-variant text-lg">Enrollment made simple for busy families.</p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 relative px-4">
+<!-- Connect Line (Hidden on mobile grid) -->
+<div class="hidden md:block absolute top-10 left-10 right-10 h-0.5 bg-primary/10 -z-10"></div>
+<div class="space-y-6">
+<div class="w-20 h-20 bg-primary text-on-primary rounded-full flex items-center justify-center mx-auto text-3xl font-black shadow-xl shadow-primary/20">1</div>
+<h4 class="font-headline font-bold text-lg">Submit enrollment application</h4>
+</div>
+<div class="space-y-6">
+<div class="w-20 h-20 bg-secondary text-on-secondary rounded-full flex items-center justify-center mx-auto text-3xl font-black shadow-xl shadow-secondary/20">2</div>
+<h4 class="font-headline font-bold text-lg">Schedule a tour and family meeting</h4>
+</div>
+<div class="space-y-6">
+<div class="w-20 h-20 bg-tertiary text-on-tertiary rounded-full flex items-center justify-center mx-auto text-3xl font-black shadow-xl shadow-tertiary/20">3</div>
+<h4 class="font-headline font-bold text-lg">Confirm admission and payment</h4>
+</div>
+<div class="space-y-6">
+<div class="w-20 h-20 bg-primary text-on-primary rounded-full flex items-center justify-center mx-auto text-3xl font-black shadow-xl shadow-primary/20">4</div>
+<h4 class="font-headline font-bold text-lg">Start your child’s journey</h4>
+</div>
+</div>
+<a href="#contact" class="inline-block bg-primary text-on-primary px-12 py-6 rounded-full font-headline font-bold text-xl hover:scale-105 transition-transform shadow-2xl shadow-primary/40">
+    Enroll Now
+</a>
+</div>
+</section>
+<!-- Contact Section with Form -->
+<section class="py-32 px-6 md:px-12 bg-white" id="contact">
+<div class="max-w-screen-2xl mx-auto flex flex-col lg:flex-row gap-16 items-start">
+<div class="lg:w-1/2 space-y-10">
+<h3 class="text-4xl font-headline font-extrabold text-on-surface">Join the Lil’ MVPs Family</h3>
+<div class="space-y-6 bg-surface-container-low p-8 rounded-3xl">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary text-3xl">location_on</span>
+<div>
+    <h5 class="font-bold text-on-surface">Lil’ MVPs Academy</h5>
+    <p class="text-on-surface-variant">Milwaukee, WI</p>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary text-3xl">phone_iphone</span>
+<a href="tel:262-810-0278" class="font-bold text-on-surface hover:text-primary transition-colors">262-810-0278</a>
+</div>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary text-3xl">mail</span>
+<a href="mailto:lilmvpsacademy@gmail.com" class="font-bold text-on-surface hover:text-primary transition-colors break-all">lilmvpsacademy@gmail.com</a>
+</div>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary text-3xl">language</span>
+<a href="https://www.lilmvpsacademy.com" target="_blank" class="font-bold text-on-surface hover:text-primary transition-colors">www.lilmvpsacademy.com</a>
+</div>
+</div>
+<button onclick="document.getElementById('contactForm').scrollIntoView({behavior: 'smooth'})" class="bg-primary text-on-primary px-8 py-4 rounded-full font-headline font-bold text-lg hover:bg-primary-dim transition-colors shadow-lg">
+    Book a Tour Today
+</button>
+</div>
+<div class="lg:w-1/2 w-full">
+<div class="bg-surface p-8 md:p-12 rounded-[2rem] shadow-xl border border-surface-container-high">
+<h4 class="text-2xl font-headline font-extrabold text-primary mb-6">Send us a Message</h4>
+<form id="contactForm" action="https://formsubmit.co/lilmvpsacademy@gmail.com" method="POST" class="space-y-6">
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+        <label class="block space-y-2">
+            <span class="text-sm font-bold text-on-surface">Parent's Name</span>
+            <input type="text" name="name" required class="mt-1 block w-full rounded-xl border-surface-container bg-white shadow-sm focus:border-primary focus:ring focus:ring-primary/20 focus:ring-opacity-50 p-3" placeholder="John Doe">
+        </label>
+        <label class="block space-y-2">
+            <span class="text-sm font-bold text-on-surface">Email Address</span>
+            <input type="email" name="email" required class="mt-1 block w-full rounded-xl border-surface-container bg-white shadow-sm focus:border-primary focus:ring focus:ring-primary/20 focus:ring-opacity-50 p-3" placeholder="john@example.com">
+        </label>
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+        <label class="block space-y-2">
+            <span class="text-sm font-bold text-on-surface">Phone Number</span>
+            <input type="tel" name="phone" required class="mt-1 block w-full rounded-xl border-surface-container bg-white shadow-sm focus:border-primary focus:ring focus:ring-primary/20 focus:ring-opacity-50 p-3" placeholder="(262) 810-0278">
+        </label>
+        <label class="block space-y-2">
+            <span class="text-sm font-bold text-on-surface">Program of Interest</span>
+            <select name="program_of_interest" class="mt-1 block w-full rounded-xl border-surface-container bg-white shadow-sm focus:border-primary focus:ring focus:ring-primary/20 focus:ring-opacity-50 p-3">
+                <option>Infant & Toddler</option>
+                <option>Preschool</option>
+                <option>Pre-K</option>
+                <option>School Age</option>
+                <option>Other / Not Sure</option>
+            </select>
+        </label>
+    </div>
+    <label class="block space-y-2">
+        <span class="text-sm font-bold text-on-surface">Message or Questions</span>
+        <textarea name="message" rows="4" class="mt-1 block w-full rounded-xl border-surface-container bg-white shadow-sm focus:border-primary focus:ring focus:ring-primary/20 focus:ring-opacity-50 p-3" placeholder="We would love to know more about..."></textarea>
+    </label>
+    <button type="submit" class="w-full bg-secondary text-on-secondary px-8 py-4 rounded-xl font-headline font-bold text-lg hover:bg-secondary-dim transition-colors shadow-lg">
+        Submit Request
+    </button>
+</form>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="w-full rounded-t-[4rem] bg-[#ffede5] dark:bg-stone-900 px-6 md:px-12 py-16">
+<div class="max-w-screen-2xl mx-auto">
+<div class="flex flex-col lg:flex-row justify-between items-start mb-16 gap-12">
+<div class="space-y-6 max-w-sm">
+<div class="text-2xl font-black text-[#452715] dark:text-white font-headline tracking-tight">Lil' MVPs Academy</div>
+<p class="text-[#452715]/70 dark:text-white/60 font-body text-sm leading-relaxed italic font-bold">
+    Lil’ MVPs Academy — Where we turn curiosity into confidence and develop tomorrow’s MVPs, today.
+</p>
+</div>
+<div class="grid grid-cols-2 sm:grid-cols-3 gap-12 font-headline font-bold text-sm">
+<div class="space-y-4">
+<p class="text-[#452715] dark:text-white uppercase tracking-widest text-xs opacity-50">Academy</p>
+<a class="block text-[#452715]/70 dark:text-white/70 hover:text-primary transition-colors" href="#about">About Us</a>
+<a class="block text-[#452715]/70 dark:text-white/70 hover:text-primary transition-colors" href="#mission">Our Mission</a>
+<a class="block text-[#452715]/70 dark:text-white/70 hover:text-primary transition-colors" href="#approach">Learning Approach</a>
+</div>
+<div class="space-y-4">
+<p class="text-[#452715] dark:text-white uppercase tracking-widest text-xs opacity-50">Enrollment</p>
+<a class="block text-[#452715]/70 dark:text-white/70 hover:text-primary transition-colors" href="#programs">Programs</a>
+<a class="block text-[#452715]/70 dark:text-white/70 hover:text-primary transition-colors" href="#safety">Flexible Care</a>
+<a class="block text-[#452715]/70 dark:text-white/70 hover:text-primary transition-colors" href="#enrollment">How to Enroll</a>
+</div>
+<div class="space-y-4">
+<p class="text-[#452715] dark:text-white uppercase tracking-widest text-xs opacity-50">Support</p>
+<a class="block text-[#452715]/70 dark:text-white/70 hover:text-primary transition-colors" href="#contact">Contact Us</a>
+<a class="block text-[#452715]/70 dark:text-white/70 hover:text-primary transition-colors" href="#">FAQ</a>
+<a class="block text-[#452715]/70 dark:text-white/70 hover:text-primary transition-colors" href="#">Privacy Policy</a>
+</div>
+</div>
+</div>
+<div class="pt-8 border-t border-[#452715]/10 dark:border-white/10 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-[#452715]/50 dark:text-white/40 font-bold uppercase tracking-widest">
+<p>© 2024 Lil' MVPs Academy. All rights reserved.</p>
+</div>
+</div>
+</footer>
+</body></html>
